@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/home/erik/School/Fall2020/CIS464/Project1
+vIR
+!s110 1605462789
+!i10b 1
+!s100 2;>PV:OlA7gnP8>a?m4iQ3
+IddNWd3OIWJClL;BYgafG42
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1537739497
+8IR.v
+FIR.v
+L0 2
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1605462789.000000
+!s107 IR.v|
+!s90 -reportprogress|300|IR.v|
+!s101 -O0
+!i113 1
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@i@r
+vprogram_counter
+!s110 1605462783
+!i10b 1
+!s100 3Og4g15QLE;@bnl653QVn3
+I11<RNz:08DG_]]@;][a9n2
+R1
+R0
+w1537740956
+8program_counter.v
+Fprogram_counter.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1605462783.000000
+!s107 program_counter.v|
+!s90 -reportprogress|300|program_counter.v|
+!s101 -O0
+!i113 1
+R3
+vreg_file
+!s110 1605462775
+!i10b 1
+!s100 honEI<z<YPm<`m_@AZY_62
+IU_WGDI8UO7Oa3O>@RNVVb0
+R1
+R0
+w1538021792
+8register_file.v
+Fregister_file.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1605462775.000000
+!s107 register_file.v|
+!s90 -reportprogress|300|register_file.v|
+!s101 -O0
+!i113 1
+R3
