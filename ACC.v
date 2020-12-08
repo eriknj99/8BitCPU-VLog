@@ -18,18 +18,20 @@ reg [7:0] memory;
 integer i;
 wire [7:0] dataIn;
 
+assign dataIn=(S1)?((S0)?imm_in:reg_in):alu_in;
+assign acc_out = memory;
+
 always @(posedge clk or CLB)
 begin
 	if(CLB == 1'b0) begin
-		memory[7:0] = 0;
+		memory[7:0] <= 0;
 	end
 	else begin
-		if (LoadReg == 1'b1) memory[RegAddr] <= dataIn;
-	end	
+		if (LoadACC == 1'b1) memory <= dataIn;
+		else memory<=memory;
+	end
 end
 
-assign dataIn=(S1)?((S0)?imm_in:reg_in):alu_in;
 
-assign reg_out = memory[RegAddr];
 
 endmodule

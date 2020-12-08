@@ -21,6 +21,7 @@ begin
 	else begin
 		if (LoadReg == 1'b1) memory[RegAddr] <= reg_in;
 	end	
+	// $display($time, " R0 %h R1 %h R2 %h R3 %h",memory[2'b00],memory[2'b01],memory[2'b10],memory[2'b11]);
 end
 
 assign reg_out = memory[RegAddr];

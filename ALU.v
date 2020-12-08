@@ -8,7 +8,7 @@ output cout, zout;
 wire cout, zout;
 reg [8:0] r;
 
-always @(a or b or ALU_sel or load_shift) begin
+always @(ALU_sel or load_shift) begin
 	case(ALU_sel) 
 		2'b10: r <= a + b; //add
 		2'b11: r <= a - b; //subtract
@@ -19,13 +19,13 @@ always @(a or b or ALU_sel or load_shift) begin
 		2'b00: 
 			begin
 			case(load_shift)
-				2'b00: r <= 0;
-				2'b10: r <= a;
+				2'b10: r <= {cout,a};
 				2'b11: r <= a >> 1;
 				2'b01: r <= a << 1;
 			endcase
 			end
 	endcase
+	// $display($time, " ALU %b %h%h\n",r,ALU_sel,load_shift);
 end
 
 assign cout = r[8];
